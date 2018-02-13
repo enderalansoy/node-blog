@@ -26,6 +26,11 @@ module.exports = {
       required: 'true',
     },
 
+    comments: {
+      collection: 'comment',
+      via: 'post',
+    }
+
   }
 };
 

@@ -6,8 +6,25 @@
  */
 
 module.exports = {
+  
+  schema: true,
 
   attributes: {
+
+    text: {
+      type: 'string',
+      required: 'true',
+    },
+
+    post: {
+      model: 'post',
+      required: 'true',
+    },
+
+    stalker: {
+      model: 'user',
+      required: 'true',
+    },
 
   }
 };
